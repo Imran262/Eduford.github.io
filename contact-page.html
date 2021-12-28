@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styling.css">
+    <!-- add google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+    <title>Eduford</title>
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <!-- add close icon on mobile view  -->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">INSIGHT</a></li>
+                    <li><a href="contact-page.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-- contact us page  -->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.2453179452473!2d74.21207981427916!3d31.434912681398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919078a87ffa74f%3A0x7359d3d8333b2be!2sAgile%20District!5e0!3m2!1sen!2s!4v1628259183385!5m2!1sen!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>
+                            85-D commercial, EME DHA Phase 12, Lahore</h5>
+                    </span>
+
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+1 7327592097</h5>
+                        <p>Monday to Friday, 12AM to 09PM</p>
+                    </span>
+
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>hello@agiledistrict.com</h5>
+                        <p>Email us Your query</p>
+                    </span>
+
+                </div>
+            </div>
+
+            <div class="contact-col">
+
+                <form action="">
+
+                    <input type="text" placeholder="Enter your name" required> 
+                    <input type="email" placeholder="Enter your email addres" required>
+                    <input type="text" placeholder="Enter your subject" required>
+                    <textarea rows="10" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn"> Send Message</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- --------Footer------- -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore deserunt delectus exercitationem
+            rerum? Dolorem praesentium,<br> et optio excepturi fuga eos consequatur molestiae sint asperiores,
+            corrupti necessitatibus neque! Explicabo, quam ipsa?</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by easy Tutorial</p>
+
+
+    </section>
+
+
+
+    <!---------JavaScript for Toggle menu ------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-220px";
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styling.css">
+    <!-- add google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+    <title>Eduford</title>
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <!-- add close icon on mobile view  -->
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">INSIGHT</a></li>
+                    <li><a href="contact-page.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>About Us</h1>
+    </section>
+
+    <!-- ------------------about us section ----------------  -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the word's largest university</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam porro necessitatibus repellat atque
+                    cupiditate nemo repudiandae magnam ipsam odio neque, reiciendis deserunt expedita sed sapiente
+                    molestias aut aperiam sit harum?</p>
+                    <a href="" class="hero-btn red-btn"> EXPLOR NOW</a>
+
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg">
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- --------Footer------- -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore deserunt delectus exercitationem
+            rerum? Dolorem praesentium,<br> et optio excepturi fuga eos consequatur molestiae sint asperiores,
+            corrupti necessitatibus neque! Explicabo, quam ipsa?</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by easy Tutorial</p>
+
+
+    </section>
+
+
+
+    <!---------JavaScript for Toggle menu ------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-220px";
+        }
+
+    </script>
+</body>
+
+</html>
